@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class SucursalMapper {
+
     public Sucursal requestAEntidad(SucursalRequest request){
         if(request == null) return null;
 
