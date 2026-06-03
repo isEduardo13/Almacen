@@ -1,0 +1,21 @@
+package com.eduardo.almacen.services;
+
+import com.eduardo.almacen.dto.ventas.VentaRequest;
+import com.eduardo.almacen.dto.ventas.VentaResponse;
+
+import java.util.List;
+
+public interface VentaService {
+
+    List<VentaResponse> listar();
+
+    VentaResponse obetenerPorId(Long id);
+
+    VentaResponse registrar(VentaRequest request);
+
+    void cancelar (Long id);
+
+
+
+
+}
