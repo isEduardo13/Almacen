@@ -34,7 +34,7 @@ public class SucursalServiceImpl implements SucursalService {
     }
 
     @Override
-    public SucursalResponse ObtenerPorId(Long id) {
+    public SucursalResponse obtenerPorId(Long id) {
         return sucursalMapper.entidadAResponse(obtenerSucursalException(id));
     }
 
@@ -75,7 +75,7 @@ public class SucursalServiceImpl implements SucursalService {
         log.info("Buscando sucursal con ID: {}", id);
         return sucursalRepository.findById(id)
                 .orElseThrow((() ->
-                        new RecursoNoEncontradoException("Sucursal no encontrada con ID: " + id)));
+                        new RecursoNoEncontradoException("Sucursal no encontrada con id: " + id)));
     }
 
     private void validarDatosUnicos (SucursalRequest request) {

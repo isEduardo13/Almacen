@@ -11,7 +11,7 @@ public interface SucursalService {
 
     List<SucursalResponse> listar();
 
-    SucursalResponse ObtenerPorId(Long id);
+    SucursalResponse obtenerPorId(Long id);
 
     SucursalResponse registrar(SucursalRequest request);
 

@@ -25,7 +25,7 @@ public enum Categoria {
          if (StringCustomUtils.quitarAcentos(categoria.descripcion).equalsIgnoreCase(descripcionNormalizada)) {
          return categoria;}
         }
-        throw  new RecursoNoEncontradoException("No existe una categoria con la descripcion"+ descripcion);
+        throw  new RecursoNoEncontradoException("No existe una categoria con la descripcion "+ descripcion);
     }
 
 }

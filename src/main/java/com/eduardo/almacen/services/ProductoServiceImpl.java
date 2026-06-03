@@ -76,6 +76,6 @@ public class ProductoServiceImpl implements ProductoService{
     }
     private Producto obtenerProductoOException(Long id ){
         log.info("Obteniendo del producto {}", id);
-        return productoRepository.findById(id).orElseThrow(() ->new RecursoNoEncontradoException("El producto no encontrado con id" + id ));
+        return productoRepository.findById(id).orElseThrow(() ->new RecursoNoEncontradoException("Producto no encontrado con id: " + id ));
     }
 }
