@@ -5,11 +5,12 @@ import com.eduardo.almacen.dto.productos.ProductoResponse;
 import com.eduardo.almacen.entities.Producto;
 import com.eduardo.almacen.enums.Categoria;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 public interface ProductoService {
 
-    List<ProductoResponse> listar();
+    List<ProductoResponse> listar(String nombre, String  categoria, BigDecimal preciomin, BigDecimal preciomax);
 
     ProductoResponse obtenerPorId(long id);
 

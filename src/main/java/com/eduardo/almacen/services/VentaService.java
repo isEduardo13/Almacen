@@ -9,7 +9,7 @@ public interface VentaService {
 
     List<VentaResponse> listar();
 
-    VentaResponse obetenerPorId(Long id);
+    VentaResponse obtenerPorId(Long id);
 
     VentaResponse registrar(VentaRequest request);
 

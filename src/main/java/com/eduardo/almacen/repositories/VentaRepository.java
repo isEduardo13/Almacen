@@ -1,4 +1,8 @@
 package com.eduardo.almacen.repositories;
 
-public interface VentaRepository {
+import com.eduardo.almacen.entities.Venta;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface VentaRepository extends JpaRepository<Venta,Long> {
+
 }

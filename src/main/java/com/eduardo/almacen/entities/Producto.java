@@ -59,8 +59,6 @@ public class Producto {
     }
     private void validarDatos(String nombre, Categoria categoria, BigDecimal precio, Integer cantidad){
 
-
-
         StringCustomUtils.validarTamanio(nombre, 5 ,30, "El nombre debe ser entre 5 y 30 caracteres");
         if(categoria==null){
             throw new IllegalArgumentException("El categoria no puede ser nulo");
